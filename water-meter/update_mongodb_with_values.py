@@ -14,6 +14,7 @@ if len(sys.argv) > 1:
 
     usages = db.usages
     usage_id = usages.insert_one(usage).inserted_id
+    print "Updated mongodb", usage_id
 else:
    sys.exit()
 
